@@ -407,10 +407,39 @@ Age (bins)
 Churned(0 ou 1)
 Demographics (Under 30, Other, Senior)
 
-Average Monthly Charge = AVERAGE('Databel - Data'[Monthly Charge])
+
 Monthly Charge Total = SUM('Databel - Data'[Monthly Charge])
-Revenue Lost Due to Churn = [Churn Rate] * [Monthly Charge Total]
-Revenue Shrinking Rate = DIVIDE([Revenue Lost Due to Churn], ([Monthly Charge Total] + [Revenue Lost Due to Churn]))
+[$208K]
+
+Revenue Churners = CALCULATE(SUM('Databel - Data'[Monthly Charge]), 'Databel - Data'[Churn Label]="Yes")
+[$66.094K]
+
+Revenue Shrinking Rate = DIVIDE([Revenue Churners], [Monthly Charge Total])
+[31.85%]
+
+Avg Active Charges = CALCULATE(AVERAGE('Databel - Data'[Monthly Charge]), 'Databel - Data'[Churn Label]="No") 
+[$28.91]
+
+Avg Churners Charges = CALCULATE(AVERAGE('Databel - Data'[Monthly Charge]), 'Databel - Data'[Churn Label]="Yes") 
+[$36.80]
+
+Average Monthly Charge = AVERAGE('Databel - Data'[Monthly Charge])
+[$31.03]
+
+Monthly Charge Min = [$5]
+Monthly Charge Max =  [$78]
+
+dividir customers por categorias de valores mensais
+4 bins de mais ou menos $18.25
+
+$0 - $23 : 2343 customers
+$24 - $41 : 2475 customers
+$42 - $59 : 1576 customers
+$60 - $78 : 293 customers
+
+grande concentração entre $7 e $13
+
+concentração +- entre $24 e $50
 
 ## perguntas possiveis
 
@@ -418,7 +447,7 @@ qual a relação de idade, estado e genero com churn?
 
 qual a relação de tipo de contrato, payment method e account length?
 
-qual a relação de charges em planos inlimitados e internacionais?
+qual a relação de charges em planos ilimitados e internacionais?
 - customers com intl active mas sem intl plan, pagam mais? cancelam mais?
 - customer sem intl active e com intl plan cancelam mais?
 

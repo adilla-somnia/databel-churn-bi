@@ -2,7 +2,7 @@
 
 *Databel* é uma empresa de telecomunicações que opera em todos os Estados Unidos e busca reduzir sua taxa de churn para reter mais receita.
 
-: **taxa de churn** (ou ***churn rate***): refere-se à taxa de cancelamento de clientes, ou seja, a porcentagem de clientes que deixam de usar os serviços da empresa em um determinado período
+**taxa de churn** (ou ***churn rate***): refere-se à taxa de cancelamento de clientes, ou seja, a porcentagem de clientes que deixam de usar os serviços da empresa em um determinado período
 
 ## Visão Geral
 

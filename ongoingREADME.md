@@ -2,11 +2,11 @@
 
 *Databel* é uma empresa de telecomunicações que opera em todos os Estados Unidos e busca reduzir sua taxa de churn para reter mais receita.
 
-$ taxa de churn (ou churn rate): refere-se à taxa de cancelamento de clientes, ou seja, a porcentagem de clientes que deixam de usar os serviços da empresa em um determinado período $
+: **taxa de churn** (ou ***churn rate***): refere-se à taxa de cancelamento de clientes, ou seja, a porcentagem de clientes que deixam de usar os serviços da empresa em um determinado período
 
 ## Visão Geral
 
- Este projeto tem como objetivo identificar os principais fatores que contribuem para o churn, como tipo de contrato, plano, faixa etária e localização geográfica. A análise irá destacar padrões e comportamentos críticos, fornecendo insights valiosos para o desenvolvimento de estratégias de retenção e ações corretivas. O relatório gerado no Power BI fornecerá informações acionáveis que apoiarão a equipe da Databel a ajustar suas ofertas e ações para minimizar o churn e maximizar a receita.
+ Este projeto tem como objetivo identificar os principais fatores que contribuem para o churn, como tipo de contrato, plano, faixa etária e localização geográfica. A análise irá destacar padrões e comportamentos críticos, fornecendo insights valiosos para o desenvolvimento de estratégias de retenção e ações corretivas. O relatório criado no Power BI fornecerá informações acionáveis que apoiarão a equipe da Databel a ajustar suas ofertas e ações para minimizar o churn e maximizar a receita.
 
  ## Conhecendo o Dataset
 
@@ -56,10 +56,10 @@ $ taxa de churn (ou churn rate): refere-se à taxa de cancelamento de clientes, 
 
 A Databel oferece uma variedade de planos e serviços, permitindo que o cliente escolha a opção que melhor se adequa às suas necessidades:
 
-- Planos Ilimitados: fornece GBs ilimitados e permite que o cliente navegue sem se preocupar com o consumo de dados.
+- **Planos Ilimitados**: fornece GBs ilimitados e permite que o cliente navegue sem se preocupar com o consumo de dados.
 
-- Planos Internacionais: fornece cobertura para chamadas internacionais ilimitadas sem cobranças adicionais.
+- **Planos Internacionais**: fornece cobertura para chamadas internacionais ilimitadas sem cobranças adicionais.
 
-- Planos Fixos de Internet: fornece uma quantidade específica de GBs por mês, sem cobranças adicionais caso o limite não seja ultrapassado. Caso o cliente ultrapasse a cota, serão cobradas taxas extras.
+- **Planos Fixos de Internet**: fornece uma quantidade específica de GBs por mês, sem cobranças adicionais caso o limite não seja ultrapassado. Caso o cliente ultrapasse a cota, serão cobradas taxas extras.
 
-- Planos em Grupo: proporciona descontos para todos os membros do grupo, tornando os planos mais acessíveis.
+- **Planos em Grupo**: proporciona descontos para todos os membros do grupo, tornando os planos mais acessíveis.

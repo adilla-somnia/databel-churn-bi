@@ -1,0 +1,52 @@
+StateID,StateShortName,StateLongName,RegionID
+1,ME,Maine,1
+2,NH,New Hampshire,1
+3,VT,Vermont,1
+4,MA,Massachusetts,1
+5,RI,Rhode Island,1
+6,CT,Connecticut,1
+7,NY,New York,1
+8,NJ,New Jersey,1
+9,PA,Pennsylvania,1
+10,OH,Ohio,2
+11,MI,Michigan,2
+12,IN,Indiana,2
+13,IL,Illinois,2
+14,WI,Wisconsin,2
+15,MN,Minnesota,2
+16,IA,Iowa,2
+17,MO,Missouri,2
+18,ND,North Dakota,2
+19,SD,South Dakota,2
+20,NE,Nebraska,2,
+21,KS,Kansas,2
+22,DE,Delaware,3
+23,MD,Maryland,3
+24,DC,District of Columbia,3
+25,VA,Virginia,3
+26,WV,West Virginia,3
+27,NC,North Carolina,3
+28,SC,South Carolina,3
+29,GA,Georgia,3
+30,FL,Florida,3
+31,KY,Kentucky,3
+32,TN,Tennessee,3
+33,AL,Alabama,3
+34,MS,Mississippi,3
+35,AR,Arkansas,3
+36,LA,Louisiana,3
+37,OK,Oklahoma,3
+38,TX,Texas,3
+39,MT,Montana,4
+40,ID,Idaho,4
+41,WY,Wyoming,4
+42,CO,Colorado,4
+43,NM,New Mexico,4
+44,AZ,Arizona,4
+45,UT,Utah,4
+46,NV,Nevada,4
+47,WA,Washington,4
+48,OR,Oregon,4
+49,CA,California,4
+50,AK,Alaska,4
+51,HI,Hawaii,4

@@ -28,7 +28,7 @@ O dataset contém 6.687 registros de clientes, incluindo:
 
 ## Dashboards
 
-### 1. Visão Geral Executiva
+### 1. Overview
 
 Fornece uma visão geral de:
 
@@ -36,7 +36,7 @@ Fornece uma visão geral de:
 - Cobranças médias mensais (geral e para churners)
 - Diminuição da receita (absoluta e %)
 
-### 2. Visão Geral do Churn
+### 2. Overview do Churn
 
 ![Churn Overview](images/churn_overview.png)
 
@@ -45,7 +45,7 @@ Destaca o churn por:
 - Tipo de contrato, tipo de plano, método de pagamento e participação em grupo
 - Insight chave: Contratos mensais e clientes que não estão em grupos têm as taxas de churn mais altas.
 
-### 3. Comportamento do Cliente e Risco
+### 3. Comportamento do Cliente
 
 Explora as diferenças comportamentais entre churners e clientes ativos pelas:
 
@@ -60,7 +60,7 @@ Analisa o churn por localização:
 - 5 principais estados por taxa de churn (funil)
 - **Insight**: Embora o churn seja bastante consistente, alguns estados mostram maior perda de clientes e taxa.
 
-### 5. Motivos do Churn
+### 5. Motivos de Churn
 
 Examina o "porquê" ao mostrar:
 
@@ -68,7 +68,7 @@ Examina o "porquê" ao mostrar:
 - Treemap com a distribuição das 5 principais razões de churn
 - **Motivo principal**: Ofertas de concorrentes, seguidas pela experiência com o serviço e questões de preço.
 
-### 6. Especulações Passadas
+### 6. Especulações do Passado
 
 Mostra o impacto histórico do churn na receita com:
 
@@ -76,7 +76,7 @@ Mostra o impacto histórico do churn na receita com:
 - Totais acumulados e cobranças médias
 - KPIs com seletores para análise
 
-### 7. Especulações Futuras
+### 7. Especulações do Futuro
 
 Prevê o impacto futuro do churn ao longo de 48 meses:
 
@@ -92,7 +92,7 @@ Prevê o impacto futuro do churn ao longo de 48 meses:
 - Normalizei os dados de planos para combinar planos ilimitados e internacionais
 - Usei tanto métricas absolutas quanto relativas para uma narrativa clara
 
-** Para uma análise completa das medidas calculadas e metodologia, consulte a Documentação Técnica (TECHNICAL.md).
+** Para uma análise completa das medidas calculadas e metodologia, consulte a [Documentação Técnica](TECHNICAL.md).
 
 ## Ferramentas
 

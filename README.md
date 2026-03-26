@@ -108,25 +108,30 @@ Forecasts future churn impact over 48 months:
 </p>
 
 ## Recommendations / Next Actions
+
+Some actions that can help lowering churn and increasing revenue:
+
 + Plan Optimization
     + Analyze usage patterns to redesign plans that match customer needs (e.g., international users or low-data users) and reduce overpayment.
 
 + Targeted Retention Campaigns
     + Focus on month-to-month contract holders and non-group members with high-risk behavior.
+
 + Proactive Customer Support
     + Identify churn-prone customers early based on service usage and charges, and provide tailored support or incentives.
+
 + Competitor Benchmarking
     + Investigate competitor offerings that are causing churn and explore competitive adjustments.
+
 + Future Analysis
     + Incorporate temporal datasets to monitor churn trends over time and refine predictive models.
 
 
 ## Resources
 
-Discover the full interactive experience and additional Plotly dashboards on my portfolio **website**!
+Want to discover new insights and explore the dataset even further?
+Have a full interactive experience with the Plotly dashboards on my portfolio **website**!
 
 ![image]
 
 You can also clone this repository and open the included Power BI file ```(.pbix)``` to explore the dashboards and analyses interactively. All necessary data files are included for a complete experience.
-
-Future work could include temporal churn analysis, deeper plan optimization strategies, and further interactive visualizations to enhance insights and business value.

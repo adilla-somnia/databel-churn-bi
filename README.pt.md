@@ -2,7 +2,8 @@
 
 A Databel é uma empresa de telecomunicações que opera em todo os Estados Unidos. Este projeto analisa os padrões de churn de clientes para fornecer insights acionáveis e prever o impacto futuro na receita.
 
-> O que é "Churn": churn é isso aqui.
+> Importante!
+> *Churn*: percentual de clientes que cancelaram ou deixaram de utilizar o serviço em um período específico.
 
 ## Visão Geral do Projeto
 
@@ -21,7 +22,7 @@ O dataset contém 6.687 registros de clientes, incluindo:
 - Cobranças
     - Cobrança Mensal, Total de Cobranças, Cobranças Extras de Dados e Internacionais
 - Churn
-    - Rótulo de Churn, Categoria de Churn, Razão do Churn
+    - Status de Churn, Categoria de Churn, Motivo do Churn
 
 > Nota: O dataset analisado é um recorte em um dado momento da empresa, não são dados temporais.
 
@@ -46,7 +47,7 @@ Destaca o churn por:
 
 ### 3. Comportamento do Cliente e Risco
 
-Explora as diferenças comportamentais entre churners e clientes ativos:
+Explora as diferenças comportamentais entre churners e clientes ativos pelas:
 
 - Chamadas de serviço, tempo de conta e cobranças
 - Visualizações mostram que churners entram em contato com o suporte mais frequentemente e deixam a empresa mais cedo, com cobranças mensais médias mais altas.
@@ -57,19 +58,19 @@ Analisa o churn por localização:
 
 - 5 principais estados por número de churners (gráfico de barras)
 - 5 principais estados por taxa de churn (funil)
-- Insight: Embora o churn seja bastante consistente, alguns estados mostram maior perda de clientes e taxa.
+- **Insight**: Embora o churn seja bastante consistente, alguns estados mostram maior perda de clientes e taxa.
 
-### 5. Razões do Churn
+### 5. Motivos do Churn
 
-Examina o "porquê":
+Examina o "porquê" ao mostrar:
 
-- Principais categorias e razões de churn
-- Treemap destaca a distribuição das 5 principais razões de churn
-- Motivo principal: Ofertas de concorrentes, seguidas pela experiência com o serviço e questões de preço.
+- Principais categorias e motivos de churn
+- Treemap com a distribuição das 5 principais razões de churn
+- **Motivo principal**: Ofertas de concorrentes, seguidas pela experiência com o serviço e questões de preço.
 
 ### 6. Especulações Passadas
 
-Mostra o impacto histórico do churn na receita:
+Mostra o impacto histórico do churn na receita com:
 
 - Receita total perdida devido aos churners
 - Totais acumulados e cobranças médias
@@ -85,17 +86,17 @@ Prevê o impacto futuro do churn ao longo de 48 meses:
 
 ## Metodologia
  
-- Criados colunas calculadas e medidas para churn, cobranças e receita
-- Criadas tabelas dimensionais para estados e outros atributos categóricos para normalizar nomes e melhorar o desempenho de filtros/relacionamentos no Power BI
-- Criados bins para idade, tempo de conta e cobranças para melhor segmentação
-- Normalizado os dados de planos para combinar planos ilimitados e internacionais
-- Usados tanto métricas absolutas quanto relativas para uma narrativa clara
+- Criei colunas calculadas e medidas para churn, cobranças e receita
+- Criei tabelas dimensionais para estados e outros atributos categóricos para normalizar nomes e melhorar o desempenho de filtros/relacionamentos no Power BI
+- Criei bins para idade, tempo de conta e cobranças para melhor segmentação
+- Normalizei os dados de planos para combinar planos ilimitados e internacionais
+- Usei tanto métricas absolutas quanto relativas para uma narrativa clara
 
-** Para uma análise completa das medidas calculadas e metodologia, consulte a Documentação Técnica ([Technical Documentantion][TECHNICAL.md])
+** Para uma análise completa das medidas calculadas e metodologia, consulte a Documentação Técnica (TECHNICAL.md).
 
 ## Ferramentas
 
-- **Power BI** para painéis e visuais interativos
+- **Power BI** para dashboards e visuais interativos
 - **DAX** para colunas e medidas calculadas
 - **Plotly & Dash (plano futuro)** para versão interativa na web
 
@@ -103,12 +104,13 @@ Prevê o impacto futuro do churn ao longo de 48 meses:
 
 1. Segmentos de Clientes de Alto Risco:
     - Clientes com contratos mensais e não membros de grupos são os mais propensos a churn.
+
 2. Diferenças Comportamentais:
-    - Churners entram em contato com o suporte ao cliente 2,5 vezes mais frequentemente, saem mais cedo e pagam um pouco mais de cobrança mensal.
+    - Churners entram em contato com o suporte ao cliente 2,4 vezes mais frequentemente, saem mais cedo e pagam um pouco mais de cobrança mensal.
 
 3. Desalinhamento de Planos:
-    - ~80% dos churners tinham o plano de dados ilimitados, mas usavam principalmente 0–10GB por mês, resultando em cobranças mais altas por serviços não utilizados.
-    - Metade desses churners eram ativos internacionalmente, mas não possuíam plano internacional, gerando cobranças extras significativas (até $586).
+    - ~80% dos churners tinham o plano de dados ilimitados, mas usavam em sua maioria 0–10GB por mês, resultando em cobranças mais altas por serviços não utilizados.
+    - Metade desses churners eram ativos internacionalmente, mas não possuíam plano internacional, gerando cobranças extras significativas (chegando a até $586).
     - Isso sugere que os clientes podem estar escolhendo planos que não se adequam aos seus padrões de uso, gerando insatisfação e churn.
 
 4. Principais Fatores de Churn:
@@ -123,6 +125,8 @@ Prevê o impacto futuro do churn ao longo de 48 meses:
 
 ## Recomendações / Próximas Ações
 
+Aqui vão algumas ações que podem melhorar a situação do churn na empresa:
+
 + Otimização de Planos
     + Analisar padrões de uso para redesenhar planos que atendam às necessidades dos clientes (ex.: usuários internacionais ou usuários de baixo consumo de dados) e reduzir o pagamento excessivo.
 
@@ -135,15 +139,13 @@ Prevê o impacto futuro do churn ao longo de 48 meses:
 + Benchmarking com Concorrentes
     + Investigar as ofertas dos concorrentes que estão causando o churn e explorar ajustes competitivos.
 
-+ Análise Futuro
++ Análise Futura
     + Incorporar conjuntos de dados temporais para monitorar tendências de churn ao longo do tempo e aprimorar os modelos preditivos.
 
 ## Recursos
 
-Descubra toda a experiência interativa e os painéis Plotly adicionais no meu **website**!
+Quer descobrir novos insights e explorar mais o dataset? Tenha acesso a uma experiência interativa com os painéis Plotly no meu **website**!
 
 ![image]
 
-Você também pode clonar este repositório e abrir o arquivo Power BI incluído nesse repositório (.pbix) para explorar os painéis e análises interativamente. Todos os arquivos de dados necessários estão incluídos para uma experiência completa.
-
-Trabalhos futuros podem incluir análise temporal de churn, estratégias mais profundas de otimização de planos e mais visualizações interativas para melhorar insights e valor para o negócio.
+Você também pode clonar este repositório e abrir o arquivo Power BI incluído nesse repositório (.pbix) para explorar os dashboards de forma interativa. Todos os arquivos de dados necessários estão incluídos para uma experiência completa.

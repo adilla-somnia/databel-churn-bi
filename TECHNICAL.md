@@ -4,7 +4,7 @@
 
 This document provides a comprehensive overview of the custom measures and columns used in the Power BI visuals of this project.
 
-The first section provides a detailed list of each page in the Power BI report, along with the visuals and their associated measures. The second section contains a detailed list of all measures and calculated columns, along with their DAX formulas, explanations, and usage
+The first section provides a detailed list of each page in the Power BI report, along with the visuals and their associated measures. The second section contains a detailed list of all measures and calculated columns, along with their DAX formulas, explanations, and usage.
 
 ## How to Read This Document
 
@@ -67,7 +67,7 @@ Postfix Label: "/month"
 
 #### Average Monthly Charge
 - Type: Card 6
-- Data field: Revenue_Monthly_Average
+- Data field: Charges_Monthly_Average
 
 #### Average Churner Monthly Charge
 - Type: Card 7
@@ -127,7 +127,7 @@ Postfix Label: "/month"
 #### Average Monthly Charge by Churn Status
 - Type: Funnel 2
 - Category: Churn Label
-- Values: Revenue_Monthly_Average
+- Values: Charges_Monthly_Average
 
 ---
 
@@ -141,7 +141,7 @@ Postfix Label: "/month"
 - Type: Map
 - Location: StateLongName
 - Bubble size: Customers_Churned
-- Tooltips: Revenue_Monthly_Average, Churn_Rate
+- Tooltips: Charges_Monthly_Average, Churn_Rate
 
 #### Top 5 Highest Churned Customers States
 - Type: Stacked Bar Chart
@@ -157,7 +157,7 @@ Postfix Label: "/month"
 #### Churn Rate by States
 - Type: Filled Map
 - Location: StateLongName
-- Tooltips: Churn_Rate, Revenue_Monthly_Average, Customers_Churned
+- Tooltips: Churn_Rate, Charges_Monthly_Average, Customers_Churned
 - Filters: StateLongName Top 5 Churn_Rate
 
 ---
@@ -470,12 +470,12 @@ GB_Monthly_Average = AVERAGE('Databel - Data'[Avg Monthly GB Download])
 
 ---
 
-#### Revenue_Monthly_Average
+#### Charges_Monthly_Average
 - **Type:** Measure
 - **Purpose:** Calculates the average monthly revenue across all customers.
 - **DAX Formula:**
 ```
-Revenue_Monthly_Average = AVERAGE('Databel - Data'[Monthly Charge])
+Charges_Monthly_Average = AVERAGE('Databel - Data'[Monthly Charge])
 ```
 - **Used in:** 
     - Overview
@@ -852,7 +852,7 @@ VAR RemainingMonths = MaxMonth - MonthNum
 
 VAR Churned = [Future_Customer_Churned_Monthly]
 
-VAR AvgRevenue = [Revenue_Monthly_Average]
+VAR AvgRevenue = [Charges_Monthly_Average]
 
 RETURN
     Churned * RemainingMonths * AvgRevenue
@@ -867,7 +867,7 @@ RETURN
 - **Purpose:** Estimates the company's current total monthly revenue from active customers, based on the average monthly charge.
 - **DAX Formula:**
 ```
-Revenue_Monthly_Current_Speculated = [Customer_Active] * [Revenue_Monthly_Average]
+Revenue_Monthly_Current_Speculated = [Customer_Active] * [Charges_Monthly_Average]
 ```
 - **Used in:** 
     - Overview
@@ -883,7 +883,7 @@ Revenue_Monthly_Current_Speculated = [Customer_Active] * [Revenue_Monthly_Averag
 - **Purpose:** Estimates the company's total monthly revenue from active customers, projected based on future speculations.
 - **DAX Formula:**
 ```
-Revenue_Monthly_Future_Speculated = [Future_Customer_Remaining_Total] * [Revenue_Monthly_Average]
+Revenue_Monthly_Future_Speculated = [Future_Customer_Remaining_Total] * [Charges_Monthly_Average]
 ```
 - **Used in:** 
     - Future Speculations
@@ -897,7 +897,7 @@ Revenue_Monthly_Future_Speculated = [Future_Customer_Remaining_Total] * [Revenue
 - **DAX Formula:**
 ```
 Revenue_Remaining_Total = 
-[Future_Customer_Remaining_Total] * [Revenue_Monthly_Average] * MAX('Speculations Future'[MonthNumber])
+[Future_Customer_Remaining_Total] * [Charges_Monthly_Average] * MAX('Speculations Future'[MonthNumber])
 ```
 - **Used in:** 
     - Future Speculations

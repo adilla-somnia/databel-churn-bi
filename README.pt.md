@@ -144,8 +144,8 @@ Aqui vão algumas ações que podem melhorar a situação do churn na empresa:
 
 ## Recursos
 
-Quer descobrir novos insights e explorar mais o dataset? Tenha acesso a uma experiência interativa com os painéis Plotly no meu **website**!
+Veja mais sobre esse projeto no meu **website**!
 
-![image]
+<p align="center"> <img src="./images/website.png"> </p>
 
 Você também pode clonar este repositório e abrir o arquivo Power BI incluído nesse repositório (.pbix) para explorar os dashboards de forma interativa. Todos os arquivos de dados necessários estão incluídos para uma experiência completa.

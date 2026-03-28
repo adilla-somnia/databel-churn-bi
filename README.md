@@ -132,6 +132,8 @@ Some actions that can help lowering churn and increasing revenue:
 Want to discover new insights and explore the dataset even further?
 Have a full interactive experience with the Plotly dashboards on my portfolio **website**!
 
-![image]
+<p align="center"> 
+    <img src="./images/website.png">
+</p>
 
 You can also clone this repository and open the included Power BI file ```(.pbix)``` to explore the dashboards and analyses interactively. All necessary data files are included for a complete experience.

@@ -104,7 +104,7 @@ Forecasts future churn impact over 48 months:
     - These findings emphasize the financial importance of targeted retention strategies and plan optimization.
 
 <p align="center"> 
-    <img src="./images/churn_impact.png">
+    <img src="./images/past_speculations.png">
 </p>
 
 ## Recommendations / Next Actions

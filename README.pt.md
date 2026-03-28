@@ -38,7 +38,7 @@ Fornece uma visão geral de:
 
 ### 2. Overview do Churn
 
-![Churn Overview](images/churn_overview.png)
+![Churn Overview](images/overview_do_churn.png)
 
 Destaca o churn por:
 
@@ -121,7 +121,7 @@ Prevê o impacto futuro do churn ao longo de 48 meses:
     - Projeções futuras indicam que, se o churn continuar na taxa atual, a receita mensal da empresa poderia diminuir 13,6% em dois anos, resultando em uma perda de $20K por mês.
     - Esses achados enfatizam a importância financeira de estratégias de retenção direcionadas e otimização de planos.
 
-<p align="center"> <img src="./images/churn_impact.png"> </p>
+<p align="center"> <img src="./images/especulacoes_do_passado.png"> </p>
 
 ## Recomendações / Próximas Ações
 

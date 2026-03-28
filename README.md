@@ -129,8 +129,7 @@ Some actions that can help lowering churn and increasing revenue:
 
 ## Resources
 
-Want to discover new insights and explore the dataset even further?
-Have a full interactive experience with the Plotly dashboards on my portfolio **website**!
+See more about this project on my portfolio **website**!
 
 <p align="center"> 
     <img src="./images/website.png">

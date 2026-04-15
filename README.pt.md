@@ -144,7 +144,7 @@ Aqui vão algumas ações que podem melhorar a situação do churn na empresa:
 
 ## Recursos
 
-Veja mais sobre esse projeto no meu **website**!
+Veja mais sobre esse projeto no meu **[website](https://adilla-portfolio.netlify.app?utm_source=github&utm_medium=repo&utm_campaign=customer-churn)**!
 
 <p align="center"> <img src="./images/website.png"> </p>
 

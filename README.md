@@ -129,7 +129,7 @@ Some actions that can help lowering churn and increasing revenue:
 
 ## Resources
 
-Learn more about this project on my portfolio **[website](https://adilla-portfolio.netlify.app?utm_source=github&utm_medium=repo&utm_campaign=customer-churn)!**
+Learn more about this project on my portfolio **[website](https://adilla-portfolio.netlify.app/databel-churn-analysis?utm_source=github&utm_medium=repo&utm_campaign=customer-churn)!**
 
 <p align="center"> 
     <img src="./images/website.png">
